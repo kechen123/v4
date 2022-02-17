@@ -244,7 +244,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">工作经验</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
@@ -286,12 +286,12 @@ const Jobs = () => {
                     hidden={activeTabId !== i}>
                     <h3>
                       <span>{title}</span>
-                      <span className="company">
+                      {/* <span className="company">
                         &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
                           {company}
                         </a>
-                      </span>
+                      </span> */}
                     </h3>
 
                     <p className="range">{range}</p>

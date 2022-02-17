@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
@@ -39,12 +40,52 @@ const StyledContactSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
+  .contact-image {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: none;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      grid-column: 1 / -1;
+      height: 100%;
+      opacity: 0.25;
+    }
+    .img {
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+      width: 300px;
+      height: 300px;
+      @media (max-width: 768px) {
+        object-fit: cover;
+        width: auto;
+        height: 100%;
+        filter: grayscale(100%) contrast(1) brightness(50%);
+      }
+      &:hover,
+      &:focus {
+        background: transparent;
+        outline: 0;
+        filter: none;
+        mix-blend-mode: normal;
+        &:after {
+          top: 15px;
+          left: 15px;
+        }
+      }
+    }
+  }
 `;
 
 const Contact = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
@@ -59,14 +100,15 @@ const Contact = () => {
 
       <h2 className="title">Get In Touch</h2>
 
-      <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-      </p>
+      <p>如果你有什么建议或者想法，或者只是想打个招呼。请联系我吧!</p>
 
       <a className="email-link" href={`mailto:${email}`}>
         Say Hello
       </a>
+      <div className="contact-image">
+        <StaticImage src="../../images/wx.jpg" alt="微信" className="img" />
+        <StaticImage src="../../images/qq.jpg" alt="QQ" className="img" />
+      </div>
     </StyledContactSection>
   );
 };

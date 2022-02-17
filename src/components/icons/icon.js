@@ -15,10 +15,19 @@ import {
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconWeiBo,
+  IconSiFou,
+  IconJueJin,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
   switch (name) {
+    case 'WeiBo':
+      return <IconWeiBo />;
+    case 'SiFou':
+      return <IconSiFou />;
+    case 'JueJin':
+      return <IconJueJin />;
     case 'AppStore':
       return <IconAppStore />;
     case 'Bookmark':

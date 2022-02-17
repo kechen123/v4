@@ -1,11 +1,10 @@
 ---
-date: '2017-04-01'
-title: 'Studio Developer'
-company: 'Scout'
+date: '2015-05-01'
+title: '前端开发工程师'
+company: '陕西亿嘉丽网络科技有限公司'
 location: 'Northeastern University'
-range: 'January - June 2017'
-url: 'https://web.northeastern.edu/scout/'
+range: '2015.05 - 2016.08'
+url: 'https://qiaojuwang.com/'
 ---
 
-- Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern
-- Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript
+- 巧居网 - 建材，家装类产品信息展示 web 平台，和微信公众号，主要微信公众号页面开发（支付）
