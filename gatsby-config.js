@@ -6,7 +6,6 @@ module.exports = {
     description: '柯大晨的个人主页.',
     siteUrl: 'https://kedachen.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

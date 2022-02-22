@@ -1,7 +1,7 @@
 ---
 date: '2020-03-01'
 title: '软件工程师'
-company: '西安未来信息股份有限公司'
+company: '未来国际'
 location: 'Boston, MA'
 range: '2020-3 - 至今'
 url: 'http://www.ourfuture.cn/'
