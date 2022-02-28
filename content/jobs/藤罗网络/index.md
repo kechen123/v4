@@ -1,6 +1,6 @@
 ---
 date: '2016-09-01'
-title: '前端研发工程师'
+title: '前端开发工程师'
 company: '藤罗网络'
 location: 'Boston, MA'
 range: '2016.09 - 2018.12'
